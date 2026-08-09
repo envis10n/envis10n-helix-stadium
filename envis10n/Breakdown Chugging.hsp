@@ -1,0 +1,681 @@
+rpshnosj{
+  "meta": {
+    "date": 0,
+    "device_id": 2490624,
+    "device_version": 0,
+    "info": "This is my rendition of a \"chugging\" metalcore tone. Heavy, almost grating distortion. The thunderous bass during palm muted sections.\n\nYou can adjust the overall level using your guitar's volume knob. Lower volume will bring the intensity down allowing for rhythm and lead tones easily.\n\nI did the EQ based on my guitar with the tone knob towards 1 or 2 o'clock. Going high brings up the thrashing, while going low mellows and gives a slightly warmer feel.",
+    "name": "Breakdown Chugging"
+  },
+  "preset": {
+    "cursor": {
+      "flow": 0,
+      "path": 0,
+      "position": 3
+    },
+    "flow": [
+      {
+        "b00": {
+          "@enabled": {
+            "value": true
+          },
+          "endpoint": "b01",
+          "harness": {
+            "@enabled": {
+              "value": true
+            }
+          },
+          "path": 0,
+          "position": 0,
+          "slot": [
+            {
+              "model": "C63_InputHost",
+              "params": {
+                "Trim": {
+                  "value": 0.0
+                },
+                "decay": {
+                  "value": 0.10000000149011612
+                },
+                "noiseGate": {
+                  "value": true
+                },
+                "threshold": {
+                  "value": -47.0
+                }
+              }
+            }
+          ],
+          "type": "input"
+        },
+        "b01": {
+          "@enabled": {
+            "value": true
+          },
+          "endpoint": "b00",
+          "harness": {
+            "@enabled": {
+              "value": true
+            }
+          },
+          "path": 0,
+          "position": 13,
+          "slot": [
+            {
+              "model": "C63_OutputHost",
+              "params": {
+                "gain": {
+                  "value": 0.0
+                },
+                "pan": {
+                  "value": 0.5
+                }
+              }
+            }
+          ],
+          "type": "output"
+        },
+        "b02": {
+          "@enabled": {
+            "snapshots": [
+              true,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "value": true
+          },
+          "harness": {
+            "@enabled": {
+              "value": true
+            },
+            "params": {
+              "CpuMonitor": {
+                "value": false
+              },
+              "EvtIdx": {
+                "value": -1
+              },
+              "bypass": {
+                "value": false
+              },
+              "upper": {
+                "value": true
+              }
+            }
+          },
+          "linkedblock": {
+            "block": "b03",
+            "flow": 0
+          },
+          "path": 0,
+          "position": 3,
+          "slot": [
+            {
+              "@enabled": true,
+              "model": "Agoura_AmpRevvCh4Red",
+              "params": {
+                "Aggression": {
+                  "value": 2
+                },
+                "AmpCabPeak2Fc": {
+                  "value": 1000.0
+                },
+                "AmpCabPeak2G": {
+                  "value": 0.0
+                },
+                "AmpCabPeak2Q": {
+                  "value": 0.7070000171661377
+                },
+                "AmpCabPeakFc": {
+                  "value": 100.0
+                },
+                "AmpCabPeakG": {
+                  "value": 0.0
+                },
+                "AmpCabPeakQ": {
+                  "value": 0.7070000171661377
+                },
+                "AmpCabShelfF": {
+                  "value": 1000.0
+                },
+                "AmpCabShelfG": {
+                  "value": 0.0
+                },
+                "AmpCabZFir": {
+                  "value": 0
+                },
+                "AmpCabZUpdate": {
+                  "value": 0
+                },
+                "Bass": {
+                  "value": 0.6000000238418579
+                },
+                "Bright": {
+                  "value": true
+                },
+                "CabIdx": {
+                  "value": -1
+                },
+                "Ch Level": {
+                  "value": 0.6659999489784241
+                },
+                "Contour": {
+                  "value": false
+                },
+                "Depth": {
+                  "value": 0.6700000166893005
+                },
+                "Drive": {
+                  "value": 0.550000011920929
+                },
+                "Fat": {
+                  "value": true
+                },
+                "Hype": {
+                  "value": 0.20000000298023224
+                },
+                "Level": {
+                  "value": -12.699999809265137
+                },
+                "Master": {
+                  "value": 0.550000011920929
+                },
+                "Mid": {
+                  "value": 0.07999999821186066
+                },
+                "Presence": {
+                  "value": 0.8500000238418579
+                },
+                "Ripple": {
+                  "value": 0.0
+                },
+                "Sag": {
+                  "value": 0.0
+                },
+                "Treble": {
+                  "value": 0.8500000238418579
+                },
+                "XPrePost": {
+                  "value": 0.5
+                }
+              }
+            }
+          ],
+          "type": "amp"
+        },
+        "b03": {
+          "@enabled": {
+            "snapshots": [
+              true,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "value": true
+          },
+          "harness": {
+            "@enabled": {
+              "value": true
+            },
+            "params": {
+              "CpuMonitor": {
+                "value": false
+              },
+              "EvtIdx": {
+                "value": -1
+              },
+              "bypass": {
+                "value": false
+              },
+              "dual": {
+                "value": true
+              },
+              "upper": {
+                "value": true
+              }
+            }
+          },
+          "linkedblock": {
+            "block": "b02",
+            "flow": 0
+          },
+          "path": 0,
+          "position": 4,
+          "slot": [
+            {
+              "@enabled": true,
+              "model": "HD2_CabMicIr_4x12BritV30WithPan",
+              "params": {
+                "Angle": {
+                  "value": 0.0
+                },
+                "Delay": {
+                  "value": 0.0
+                },
+                "Distance": {
+                  "value": 1.0
+                },
+                "HighCut": {
+                  "value": 20100.0
+                },
+                "IrData": {
+                  "value": 0
+                },
+                "Level": {
+                  "value": 0.0
+                },
+                "LowCut": {
+                  "value": 40.0
+                },
+                "Mic": {
+                  "value": 2
+                },
+                "Pan": {
+                  "value": 0.5
+                },
+                "Position": {
+                  "value": 0.10000000149011612
+                }
+              }
+            },
+            {
+              "@enabled": true,
+              "model": "HD2_CabMicIr_4x12BritV30WithPan",
+              "params": {
+                "Angle": {
+                  "value": 45.0
+                },
+                "Delay": {
+                  "value": 0.0
+                },
+                "Distance": {
+                  "value": 1.75
+                },
+                "HighCut": {
+                  "value": 12000.0
+                },
+                "IrData": {
+                  "value": 0
+                },
+                "Level": {
+                  "value": 0.0
+                },
+                "LowCut": {
+                  "value": 19.899999618530273
+                },
+                "Mic": {
+                  "value": 11
+                },
+                "Pan": {
+                  "value": 0.5
+                },
+                "Position": {
+                  "value": 0.36000001430511475
+                }
+              }
+            }
+          ],
+          "type": "cab"
+        },
+        "b04": {
+          "@enabled": {
+            "snapshots": [
+              true,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "value": true
+          },
+          "harness": {
+            "@enabled": {
+              "value": true
+            },
+            "params": {
+              "CpuMonitor": {
+                "value": false
+              },
+              "EvtIdx": {
+                "value": -1
+              },
+              "bypass": {
+                "value": false
+              },
+              "upper": {
+                "value": true
+              }
+            }
+          },
+          "path": 0,
+          "position": 1,
+          "slot": [
+            {
+              "@enabled": true,
+              "model": "HD2_DistScream808Mono",
+              "params": {
+                "Gain": {
+                  "value": 0.6000000238418579
+                },
+                "Level": {
+                  "value": 0.5
+                },
+                "Tone": {
+                  "value": 0.4000000059604645
+                }
+              }
+            }
+          ],
+          "type": "fx"
+        },
+        "b05": {
+          "@enabled": {
+            "snapshots": [
+              true,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "value": true
+          },
+          "harness": {
+            "@enabled": {
+              "value": true
+            },
+            "params": {
+              "CpuMonitor": {
+                "value": false
+              },
+              "EvtIdx": {
+                "value": -1
+              },
+              "bypass": {
+                "value": false
+              },
+              "upper": {
+                "value": true
+              }
+            }
+          },
+          "path": 0,
+          "position": 2,
+          "slot": [
+            {
+              "@enabled": true,
+              "model": "HD2_DistRatatouilleDistMono",
+              "params": {
+                "Filter": {
+                  "value": 0.6499999761581421
+                },
+                "Gain": {
+                  "value": 0.10000000149011612
+                },
+                "Level": {
+                  "value": 0.5
+                }
+              }
+            }
+          ],
+          "type": "fx"
+        },
+        "b06": {
+          "@enabled": {
+            "snapshots": [
+              true,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "value": true
+          },
+          "harness": {
+            "@enabled": {
+              "value": true
+            },
+            "params": {
+              "CpuMonitor": {
+                "value": false
+              },
+              "EvtIdx": {
+                "value": -1
+              },
+              "bypass": {
+                "value": false
+              },
+              "upper": {
+                "value": true
+              }
+            }
+          },
+          "path": 0,
+          "position": 5,
+          "slot": [
+            {
+              "@enabled": true,
+              "model": "HX2_EQParametricMono",
+              "params": {
+                "HighCut": {
+                  "value": 20000.0
+                },
+                "HighCutEnable": {
+                  "value": true
+                },
+                "HighCutSlope": {
+                  "value": 1
+                },
+                "HighEnable": {
+                  "value": false
+                },
+                "HighFreq": {
+                  "value": 5000.0
+                },
+                "HighGain": {
+                  "value": 0.0
+                },
+                "HighQ": {
+                  "value": 0.7070000171661377
+                },
+                "HighShelfEnable": {
+                  "value": true
+                },
+                "HighShelfFreq": {
+                  "value": 8000.0
+                },
+                "HighShelfGain": {
+                  "value": 7.0
+                },
+                "Level": {
+                  "value": 0.0
+                },
+                "LowCut": {
+                  "value": 20.0
+                },
+                "LowCutEnable": {
+                  "value": true
+                },
+                "LowCutSlope": {
+                  "value": 1
+                },
+                "LowEnable": {
+                  "value": false
+                },
+                "LowFreq": {
+                  "value": 150.0
+                },
+                "LowGain": {
+                  "value": 0.0
+                },
+                "LowQ": {
+                  "value": 0.7070000171661377
+                },
+                "LowShelfEnable": {
+                  "value": true
+                },
+                "LowShelfFreq": {
+                  "value": 40.0
+                },
+                "LowShelfGain": {
+                  "value": -1.0
+                },
+                "MidEnable": {
+                  "value": true
+                },
+                "MidFreq": {
+                  "value": 2600.0
+                },
+                "MidGain": {
+                  "value": -2.5
+                },
+                "MidQ": {
+                  "value": 1.100000023841858
+                }
+              }
+            }
+          ],
+          "type": "fx"
+        }
+      },
+      {
+        "b00": {
+          "@enabled": {
+            "value": true
+          },
+          "harness": {
+            "@enabled": {
+              "value": true
+            }
+          },
+          "path": 0,
+          "position": 0,
+          "slot": [
+            {
+              "model": "C63_InputNone",
+              "params": {
+                "Trim": {
+                  "value": 0.0
+                },
+                "decay": {
+                  "value": 0.10000000149011612
+                },
+                "noiseGate": {
+                  "value": false
+                },
+                "threshold": {
+                  "value": -48.0
+                }
+              }
+            }
+          ],
+          "type": "input"
+        },
+        "b01": {
+          "@enabled": {
+            "value": true
+          },
+          "harness": {
+            "@enabled": {
+              "value": true
+            }
+          },
+          "path": 0,
+          "position": 13,
+          "slot": [
+            {
+              "model": "C63_OutputHost",
+              "params": {
+                "gain": {
+                  "value": 0.0
+                },
+                "pan": {
+                  "value": 0.5
+                }
+              }
+            }
+          ],
+          "type": "output"
+        }
+      }
+    ],
+    "params": {
+      "activesnapshot": 0,
+      "tempo": 120.0
+    },
+    "snapshots": [
+      {
+        "color": "auto",
+        "name": "SNAPSHOT 1",
+        "source": 0,
+        "tempo": 120.0,
+        "valid": true
+      },
+      {
+        "color": "auto",
+        "name": "SNAPSHOT 2",
+        "source": 0,
+        "tempo": 120.0,
+        "valid": false
+      },
+      {
+        "color": "auto",
+        "name": "SNAPSHOT 3",
+        "source": 0,
+        "tempo": 120.0,
+        "valid": false
+      },
+      {
+        "color": "auto",
+        "name": "SNAPSHOT 4",
+        "source": 0,
+        "tempo": 120.0,
+        "valid": false
+      },
+      {
+        "color": "auto",
+        "name": "SNAPSHOT 5",
+        "source": 0,
+        "tempo": 120.0,
+        "valid": false
+      },
+      {
+        "color": "auto",
+        "name": "SNAPSHOT 6",
+        "source": 0,
+        "tempo": 120.0,
+        "valid": false
+      },
+      {
+        "color": "auto",
+        "name": "SNAPSHOT 7",
+        "source": 0,
+        "tempo": 120.0,
+        "valid": false
+      },
+      {
+        "color": "auto",
+        "name": "SNAPSHOT 8",
+        "source": 0,
+        "tempo": 120.0,
+        "valid": false
+      }
+    ]
+  }
+}
