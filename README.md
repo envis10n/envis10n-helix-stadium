@@ -1,8 +1,10 @@
 # envis10n-helix-stadium
 
-This is a repository of my presets for the new [Line 6 Helix Stadium Native](https://line6.com/helix-stadium-native-intro/) plugin.
+This is a repository of my presets for the new [Line 6 Helix Stadium Native Intro](https://line6.com/helix-stadium-native-intro/) plugin.
 
 Each preset has an accompanying .txt document describing the tone. (This information is also included in the preset info in the plugin.)
+
+NOTE: These presets use ONLY the components provided with the free Intro version.
 
 ## Installation
 
